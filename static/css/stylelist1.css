@@ -1,0 +1,26 @@
+body{
+    background-image: url('../images/bg.jpg') !important;
+    background-size: cover;
+    
+}
+.cafe {
+    display: flex;
+    flex-flow: column;
+    height: -1%;
+    width: 25%;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+  
+    border: 1px solid gray;
+    margin-right: 10px;
+   margin-bottom: 10px;
+}
+.top{
+    text-align: center;
+    
+
+}
+.row{
+    margin-top: 265px;
+}

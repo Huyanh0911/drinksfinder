@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    {% for cafe in findcafe %}
+    <div>
+        <p>Name: {{cafe.Name}} </p>
+        <p>Add: {{cafe.Address}}</p>
+        <p>Menu: {{cafe.Menu}}</p>
+        <p>Parking: {{cafe.Parking}}</p>
+        <p>Free_wifi: {{cafe.Free_wifi}}</p>
+        <p>Contacts: {{cafe.Contacts}}</p> 
+        <p>Key_an: {{cafe.Quan}}</p> 
+
+        
+
+        <hr>
+    </div>
+{%endfor%}
+</body>
+</html>
+    

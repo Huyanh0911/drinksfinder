@@ -1,0 +1,55 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Pricing Plans Widget Flat Responsive Widget Template :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Product Pricing Plans Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<script src="../static/js/jquery-1.11.1.min.js"></script> 
+<link href="../static/css/stylelist.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../static/css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="main">
+
+		<h1>Product Pricing Plans Widget</h1>
+		{% for cafe in findcafe %}
+		<div class="w3l_main_grids">
+			<div class="w3l_main_grid">
+				<div class="w3l_main_grid_top">
+					<h3>Name: {{cafe.Name}} </h3>
+					
+				</div>
+				
+				<div class="w3l_main_grid_middle">
+					<ul>	
+						<li>Add: {{cafe.Address}}</li>
+						<li>Menu: {{cafe.Menu}}</li>
+						<li>Contacts: {{cafe.Contacts}}</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+		{%endfor%}
+		
+
+	
+	</div>
+</body>
+</html>
