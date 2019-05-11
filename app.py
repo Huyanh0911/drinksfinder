@@ -3,9 +3,16 @@ app = Flask(__name__)
 from models.data import cafe_ndt
 
 @app.route('/all_cafe')
-def index():
+def cafe():
     all_cafe=cafe_ndt.find()
     return render_template('allcafe.html',all_cafe=all_cafe)
+@app.route('/')
+def index():
+    return render_template('home.html') 
+    
+    
+       
+    
 @app.route('/find',methods=["GET","POST"])
 def find():
     if request.method =='GET':
