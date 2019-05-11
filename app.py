@@ -1,6 +1,6 @@
 from flask import Flask, render_template,request,redirect
 app = Flask(__name__)
-from data import cafe_ndt
+from models.data import cafe_ndt
 
 @app.route('/all_cafe')
 def index():
